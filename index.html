@@ -15,6 +15,7 @@
   <nav class="navbar">
     <a href="#hero">Home</a>
     <a href="#schedule">Schedule</a>
+    <a href="#gallery">Gallery</a>
     <a href="#travel">Travel</a>
     <a href="#rsvp">RSVP</a>
     <a href="#registry">Registry</a>
@@ -26,6 +27,27 @@
       <h1>Khanh & Adam</h1>
       <p class="tagline">Khanh & Adam Furever</p>
       <p class="date-location">October 24, 2026 • San Francisco, CA</p>
+
+      <!-- Countdown Container -->
+      <div class="countdown-container">
+        <div class="countdown-item">
+          <span id="days">00</span>
+          <span class="label">Days</span>
+        </div>
+        <div class="countdown-item">
+          <span id="hours">00</span>
+          <span class="label">Hours</span>
+        </div>
+        <div class="countdown-item">
+          <span id="minutes">00</span>
+          <span class="label">Mins</span>
+        </div>
+        <div class="countdown-item">
+          <span id="seconds">00</span>
+          <span class="label">Secs</span>
+        </div>
+      </div>
+
       <a href="#rsvp" class="btn">RSVP Now</a>
     </div>
   </header>
@@ -55,8 +77,18 @@
     </div>
   </section>
 
+  <!-- Gallery Section -->
+  <section id="gallery" class="section alt-bg">
+    <h2>Gallery</h2>
+    <div class="gallery-grid">
+      <img src="assets/photo1.jpg" alt="Engagement in Paris" class="gallery-img">
+      <img src="assets/photo2.jpg" alt="Golden Gate Sunset" class="gallery-img">
+      <img src="assets/photo3.jpg" alt="Napa Valley Memories" class="gallery-img">
+    </div>
+  </section>
+
   <!-- Travel & Accommodations -->
-  <section id="travel" class="section alt-bg">
+  <section id="travel" class="section">
     <h2>Travel & Stay</h2>
     <div class="grid">
       <div class="card">
@@ -74,7 +106,7 @@
   </section>
 
   <!-- RSVP Section (Embed Form) -->
-  <section id="rsvp" class="section">
+  <section id="rsvp" class="section alt-bg">
     <h2>RSVP</h2>
     <p class="rsvp-subtext">Please kindly respond by September 20, 2026.</p>
     <div class="form-container">
@@ -86,7 +118,7 @@
   </section>
 
   <!-- Registry Section -->
-  <section id="registry" class="section alt-bg">
+  <section id="registry" class="section">
     <h2>Registry</h2>
     <p class="registry-subtext">Your presence is gift enough, but if you wish to contribute, we’ve created a few funds below:</p>
     <div class="button-group">
@@ -100,5 +132,14 @@
     <p class="furever-tag">Khanh & Adam Furever</p>
   </footer>
 
+  <!-- Modal Lightbox -->
+  <div id="image-modal" class="modal" aria-hidden="true" role="dialog">
+    <button class="modal-close" id="modal-close" aria-label="Close modal">&times;</button>
+    <img id="modal-img" src="" alt="">
+    <p id="modal-caption" class="modal-caption"></p>
+  </div>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
 </body>
 </html>
