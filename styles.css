@@ -6,9 +6,12 @@
   --text-color: #2b2b2b;
   --text-muted: #666;
   --accent-color: #5a6b5c; /* Soft sage green */
+  --accent-dark: #3f4d40;
+  --accent-light: #e8eee8;
   --button-hover: #48564a;
   --card-bg: #ffffff;
   --border-subtle: rgba(0, 0, 0, 0.08);
+  --gold-accent: #9b814a;
 }
 
 * {
@@ -37,33 +40,43 @@ h1, h2, h3 {
 
 h1 {
   font-size: 3.8rem;
+  margin-top: 0.2rem;
   margin-bottom: 0.25rem;
   color: #232d24;
 }
 
 h2 {
-  font-size: 2.4rem;
-  margin-bottom: 1.5rem;
+  font-size: 2.5rem;
+  margin-bottom: 1.25rem;
   text-align: center;
   color: #232d24;
 }
 
 h3 {
   font-size: 1.6rem;
+  margin-top: 0;
   margin-bottom: 0.5rem;
   color: var(--accent-color);
+}
+
+.section-intro {
+  text-align: center;
+  max-width: 620px;
+  margin: -0.5rem auto 2.5rem auto;
+  color: var(--text-muted);
+  font-size: 1.05rem;
 }
 
 /* Sticky Navigation */
 .navbar {
   position: sticky;
   top: 0;
-  background-color: rgba(250, 249, 246, 0.95);
+  background-color: rgba(250, 249, 246, 0.96);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
   display: flex;
   justify-content: center;
-  gap: 2rem;
+  gap: 1.8rem;
   padding: 1.1rem;
   border-bottom: 1px solid var(--border-subtle);
   z-index: 100;
@@ -72,7 +85,7 @@ h3 {
 .navbar a {
   text-decoration: none;
   color: var(--text-color);
-  font-size: 0.85rem;
+  font-size: 0.82rem;
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 0.12em;
@@ -85,43 +98,127 @@ h3 {
 
 /* Hero Section */
 .hero {
-  min-height: 75vh;
+  min-height: 85vh;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 4rem 2rem;
+  padding: 4.5rem 2rem;
   background: radial-gradient(circle at center, #ffffff 0%, var(--bg-alt) 100%);
   border-bottom: 1px solid var(--border-subtle);
 }
 
 .hero-content {
-  max-width: 650px;
+  max-width: 780px;
 }
 
 .tagline {
   font-family: var(--font-serif);
   font-style: italic;
-  font-size: 1.3rem;
+  font-size: 1.35rem;
   color: var(--accent-color);
   margin-top: 0;
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.25rem;
 }
 
-.date-location {
-  font-size: 1.15rem;
+.hero-subtitle {
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  font-style: italic;
   color: var(--text-muted);
-  margin-bottom: 1.5rem;
-  letter-spacing: 0.05em;
-  font-weight: 300;
+  margin-bottom: 2rem;
 }
 
-/* --- Countdown Timer --- */
+/* Dual Celebration Badges */
+.celebration-badges {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  margin: 1.75rem auto 2.5rem auto;
+  flex-wrap: wrap;
+}
+
+.badge-item {
+  background: rgba(255, 255, 255, 0.85);
+  border: 1px solid var(--border-subtle);
+  border-radius: 30px;
+  padding: 0.6rem 1.4rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.badge-icon {
+  font-size: 1.1rem;
+}
+
+.badge-title {
+  font-weight: 600;
+  color: var(--accent-color);
+}
+
+.badge-date {
+  color: var(--text-muted);
+}
+
+.badge-divider {
+  color: var(--gold-accent);
+  font-size: 0.8rem;
+}
+
+/* Countdown Wrapper & Tabs */
+.countdown-wrapper {
+  background: white;
+  padding: 2rem;
+  border-radius: 16px;
+  border: 1px solid var(--border-subtle);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.03);
+  margin: 0 auto 2.5rem auto;
+  max-width: 580px;
+}
+
+.countdown-tabs {
+  display: inline-flex;
+  background: var(--bg-alt);
+  padding: 4px;
+  border-radius: 8px;
+  margin-bottom: 1.25rem;
+  gap: 4px;
+}
+
+.countdown-tab {
+  background: transparent;
+  border: none;
+  padding: 0.5rem 1.1rem;
+  border-radius: 6px;
+  font-family: var(--font-sans);
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.countdown-tab.active {
+  background: white;
+  color: var(--accent-color);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.countdown-title {
+  font-family: var(--font-sans);
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin-bottom: 1rem;
+}
+
 .countdown-container {
   display: flex;
   justify-content: center;
   gap: 1.5rem;
-  margin: 2rem 0;
 }
 
 .countdown-item {
@@ -133,14 +230,14 @@ h3 {
 
 .countdown-item span:first-child {
   font-family: var(--font-serif);
-  font-size: 2.2rem;
+  font-size: 2.4rem;
   font-weight: 600;
   line-height: 1;
   color: #232d24;
 }
 
 .countdown-item .label {
-  font-size: 0.75rem;
+  font-size: 0.72rem;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   color: var(--text-muted);
@@ -149,22 +246,22 @@ h3 {
 
 /* Sections & Layout */
 .section {
-  padding: 5rem 2rem;
-  max-width: 850px;
+  padding: 5.5rem 2rem;
+  max-width: 960px;
   margin: 0 auto;
 }
 
 .alt-bg {
   background-color: var(--bg-alt);
   max-width: 100%;
-  padding-left: max(2rem, calc(50vw - 425px));
-  padding-right: max(2rem, calc(50vw - 425px));
+  padding-left: max(2rem, calc(50vw - 480px));
+  padding-right: max(2rem, calc(50vw - 480px));
 }
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2.2rem;
 }
 
 .card {
@@ -178,21 +275,120 @@ h3 {
 
 .card:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.07);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.07);
 }
 
-/* Timeline */
+/* Destination Cards */
+.destination-tag {
+  display: inline-block;
+  background: var(--accent-light);
+  color: var(--accent-color);
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  margin-bottom: 0.75rem;
+}
+
+.destination-header h3 {
+  font-size: 1.8rem;
+  margin-bottom: 0.25rem;
+}
+
+.destination-date {
+  font-weight: 600;
+  color: #333;
+  margin: 0.2rem 0;
+}
+
+.destination-place {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.destination-desc {
+  color: #444;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.destination-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+/* Schedule Tabs & Content */
+.schedule-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-bottom: 2.5rem;
+}
+
+.schedule-tab {
+  background: white;
+  border: 1px solid var(--border-subtle);
+  padding: 0.75rem 1.6rem;
+  border-radius: 30px;
+  font-family: var(--font-sans);
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.schedule-tab.active {
+  background: var(--accent-color);
+  color: white;
+  border-color: var(--accent-color);
+  box-shadow: 0 4px 12px rgba(90, 107, 92, 0.25);
+}
+
+.schedule-content {
+  display: none;
+}
+
+.schedule-content.active {
+  display: block;
+}
+
 .timeline {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-  text-align: center;
+}
+
+.featured-event {
+  border: 1.5px solid var(--accent-color);
+  background: #fdfdfc;
+  position: relative;
+}
+
+.event-badge {
+  position: absolute;
+  top: -12px;
+  right: 20px;
+  background: var(--accent-color);
+  color: white;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 0.2rem 0.75rem;
+  border-radius: 12px;
 }
 
 .event .time {
-  font-weight: 500;
+  font-weight: 600;
   color: #333;
-  margin: 0.3rem 0;
+  margin: 0.25rem 0;
 }
 
 .event .location {
@@ -207,16 +403,27 @@ h3 {
   margin-top: 0.5rem;
 }
 
+/* Travel lists */
+.card ul {
+  padding-left: 1.25rem;
+  margin: 0.5rem 0 1rem 0;
+  color: #444;
+}
+
+.card ul li {
+  margin-bottom: 0.35rem;
+}
+
 /* --- Gallery Grid --- */
 .gallery-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 1.25rem;
 }
 
 .gallery-img {
   width: 100%;
-  height: 260px;
+  height: 280px;
   object-fit: cover;
   border-radius: 8px;
   cursor: pointer;
@@ -288,16 +495,36 @@ h3 {
   color: #ccc;
 }
 
-/* RSVP & Registry */
+/* RSVP Deadlines */
+.rsvp-deadlines {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.deadline-badge {
+  background: var(--bg-alt);
+  border: 1px solid var(--border-subtle);
+  padding: 0.6rem 1.25rem;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  color: var(--text-color);
+}
+
 .rsvp-subtext, .registry-subtext {
   text-align: center;
   color: var(--text-muted);
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
+  max-width: 650px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .rsvp-placeholder {
   background: white;
-  padding: 3rem 2rem;
+  padding: 3.5rem 2rem;
   border-radius: 12px;
   border: 1px dashed var(--accent-color);
   text-align: center;
@@ -319,7 +546,7 @@ h3 {
   display: inline-block;
   background-color: var(--accent-color);
   color: white;
-  padding: 0.85rem 2rem;
+  padding: 0.85rem 2.2rem;
   border-radius: 6px;
   text-decoration: none;
   font-size: 0.9rem;
@@ -327,6 +554,7 @@ h3 {
   letter-spacing: 0.05em;
   transition: all 0.2s ease;
   cursor: pointer;
+  border: none;
 }
 
 .btn:hover {
@@ -345,6 +573,11 @@ h3 {
   color: white;
 }
 
+.btn.small {
+  padding: 0.5rem 1.2rem;
+  font-size: 0.82rem;
+}
+
 .button-group {
   display: flex;
   justify-content: center;
@@ -358,13 +591,16 @@ h3 {
   color: var(--accent-color);
   text-decoration: none;
   font-weight: 500;
-  margin-top: 0.5rem;
   transition: opacity 0.2s ease;
 }
 
 .link:hover {
   opacity: 0.8;
   text-decoration: underline;
+}
+
+.link.small {
+  font-size: 0.85rem;
 }
 
 /* Footer */
@@ -388,13 +624,14 @@ footer p {
 }
 
 /* Responsive adjustments */
-@media (max-width: 650px) {
-  h1 { font-size: 2.6rem; }
+@media (max-width: 768px) {
+  h1 { font-size: 2.8rem; }
   h2 { font-size: 2rem; }
-  .navbar { gap: 1rem; font-size: 0.75rem; padding: 0.8rem; }
+  .navbar { gap: 1rem; font-size: 0.75rem; padding: 0.8rem; flex-wrap: wrap; }
   .section { padding: 3.5rem 1.5rem; }
   .alt-bg { padding-left: 1.5rem; padding-right: 1.5rem; }
   .card { padding: 1.5rem; }
-  .countdown-container { gap: 1rem; }
-  .countdown-item span:first-child { font-size: 1.8rem; }
+  .celebration-badges { flex-direction: column; gap: 0.75rem; }
+  .badge-divider { display: none; }
+  .schedule-tabs { flex-direction: column; }
 }

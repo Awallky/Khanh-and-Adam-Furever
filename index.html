@@ -3,17 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Khanh & Adam — Wedding</title>
+  <title>Khanh & Adam — Two Celebrations</title>
   <link rel="stylesheet" href="styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
   <!-- Navigation -->
   <nav class="navbar">
     <a href="#hero">Home</a>
+    <a href="#destinations">Destinations</a>
     <a href="#schedule">Schedule</a>
     <a href="#gallery">Gallery</a>
     <a href="#travel">Travel</a>
@@ -24,62 +25,168 @@
   <!-- Hero Section -->
   <header id="hero" class="hero">
     <div class="hero-content">
-      <h1>Khanh & Adam</h1>
       <p class="tagline">Khanh & Adam Furever</p>
-      <p class="date-location">October 24, 2026 • San Francisco, CA</p>
-
-      <!-- Countdown Container -->
-      <div class="countdown-container">
-        <div class="countdown-item">
-          <span id="days">00</span>
-          <span class="label">Days</span>
+      <h1>Khanh & Adam</h1>
+      <p class="hero-subtitle">Two celebrations, two corners of the world, one love story.</p>
+      
+      <!-- Dual Celebration Badges -->
+      <div class="celebration-badges">
+        <div class="badge-item">
+          <span class="badge-icon">🍂</span>
+          <span class="badge-title">Kentucky Celebration</span>
+          <span class="badge-date">October 23, 2027 • Cliffview Resort</span>
         </div>
-        <div class="countdown-item">
-          <span id="hours">00</span>
-          <span class="label">Hours</span>
-        </div>
-        <div class="countdown-item">
-          <span id="minutes">00</span>
-          <span class="label">Mins</span>
-        </div>
-        <div class="countdown-item">
-          <span id="seconds">00</span>
-          <span class="label">Secs</span>
+        <div class="badge-divider">✦</div>
+        <div class="badge-item">
+          <span class="badge-icon">🌿</span>
+          <span class="badge-title">Vietnam Celebration</span>
+          <span class="badge-date">November 13, 2027 • An Lâm Retreats</span>
         </div>
       </div>
 
-      <a href="#rsvp" class="btn">RSVP Now</a>
+      <!-- Countdown Section with Location Tabs -->
+      <div class="countdown-wrapper">
+        <div class="countdown-tabs" role="tablist">
+          <button class="countdown-tab active" id="tab-kentucky" data-target="kentucky" role="tab" aria-selected="true">
+            Cliffview Resort (Oct 23)
+          </button>
+          <button class="countdown-tab" id="tab-vietnam" data-target="vietnam" role="tab" aria-selected="false">
+            An Lâm Saigon River (Nov 13)
+          </button>
+        </div>
+
+        <div class="countdown-title" id="countdown-label">Counting down to Cliffview Resort:</div>
+
+        <div class="countdown-container">
+          <div class="countdown-item">
+            <span id="days">00</span>
+            <span class="label">Days</span>
+          </div>
+          <div class="countdown-item">
+            <span id="hours">00</span>
+            <span class="label">Hours</span>
+          </div>
+          <div class="countdown-item">
+            <span id="minutes">00</span>
+            <span class="label">Mins</span>
+          </div>
+          <div class="countdown-item">
+            <span id="seconds">00</span>
+            <span class="label">Secs</span>
+          </div>
+        </div>
+      </div>
+
+      <a href="#rsvp" class="btn">RSVP for Celebrations</a>
     </div>
   </header>
 
+  <!-- Destinations Section -->
+  <section id="destinations" class="section">
+    <h2>Our Two Venues</h2>
+    <p class="section-intro">We are thrilled to celebrate our marriage with two distinct ceremonies surrounded by stunning nature and our beloved family and friends.</p>
+    
+    <div class="grid destination-grid">
+      <!-- Destination 1: Cliffview Resort -->
+      <div class="card destination-card">
+        <div class="destination-header">
+          <span class="destination-tag">USA Celebration</span>
+          <h3>Cliffview Resort</h3>
+          <p class="destination-date">Saturday, October 23, 2027</p>
+          <p class="destination-place">Red River Gorge • Campton, Kentucky</p>
+        </div>
+        <p class="destination-desc">
+          Perched amidst the majestic forests and scenic cliffs of the Red River Gorge, Cliffview Resort offers panoramic views, tranquil lakeside settings, and cozy lodge accommodations.
+        </p>
+        <div class="destination-actions">
+          <a href="https://maps.app.goo.gl/gu4aFDwr68ofQiy38" target="_blank" rel="noopener" class="btn outline small">View on Google Maps ↗</a>
+        </div>
+      </div>
+
+      <!-- Destination 2: An Lam Retreats Saigon River -->
+      <div class="card destination-card">
+        <div class="destination-header">
+          <span class="destination-tag">Vietnam Celebration</span>
+          <h3>An Lâm Retreats Saigon River</h3>
+          <p class="destination-date">Saturday, November 13, 2027</p>
+          <p class="destination-place">Saigon River • Ho Chi Minh City, Vietnam</p>
+        </div>
+        <p class="destination-desc">
+          Nestled under a lush tropical canopy along the tranquil banks of the Saigon River, An Lâm Retreats combines serene riverside elegance, private boat transfers, and timeless Vietnamese hospitality.
+        </p>
+        <div class="destination-actions">
+          <a href="https://anlam.com/saigon-river/our-retreat/" target="_blank" rel="noopener" class="btn outline small">Explore Retreat ↗</a>
+          <a href="https://anlam.com/saigon-river/sgr-weddings/" target="_blank" rel="noopener" class="link small">Wedding Venue Info →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Schedule Section -->
-  <section id="schedule" class="section">
-    <h2>Schedule of Events</h2>
-    <div class="timeline">
-      <div class="event card">
-        <h3>Welcome Drinks</h3>
-        <p class="time">Friday, Oct 23, 2026 • 7:00 PM</p>
-        <p class="location">Location TBD • San Francisco, CA</p>
-        <p class="note">Casual attire</p>
+  <section id="schedule" class="section alt-bg">
+    <h2>Schedules of Events</h2>
+
+    <!-- Schedule Selector Tabs -->
+    <div class="schedule-tabs" role="tablist">
+      <button class="schedule-tab active" data-schedule="kentucky">Cliffview Resort (Kentucky)</button>
+      <button class="schedule-tab" data-schedule="vietnam">An Lâm Retreats (Vietnam)</button>
+    </div>
+
+    <!-- Kentucky Schedule Content -->
+    <div class="schedule-content active" id="schedule-kentucky">
+      <div class="timeline">
+        <div class="event card">
+          <h3>Welcome Gathering & Bonfire</h3>
+          <p class="time">Friday, October 22, 2027 • 6:30 PM</p>
+          <p class="location">Cliffview Lodge Deck • Red River Gorge, KY</p>
+          <p class="note">Casual mountain attire & s'mores</p>
+        </div>
+        <div class="event card featured-event">
+          <span class="event-badge">Wedding Day</span>
+          <h3>Ceremony & Overlook Reception</h3>
+          <p class="time">Saturday, October 23, 2027 • 4:30 PM</p>
+          <p class="location">Overlook Point & Reception Hall • Cliffview Resort</p>
+          <p class="note">Dress Code: Cocktail / Semi-Formal Attire</p>
+        </div>
+        <div class="event card">
+          <h3>Farewell Coffee & Gorge Hike</h3>
+          <p class="time">Sunday, October 24, 2027 • 10:00 AM</p>
+          <p class="location">Lodge Main Lounge</p>
+          <p class="note">Casual & comfortable outdoor gear</p>
+        </div>
       </div>
-      <div class="event card">
-        <h3>Ceremony & Reception</h3>
-        <p class="time">Saturday, Oct 24, 2026 • 4:30 PM</p>
-        <p class="location">Venue Name • San Francisco, CA</p>
-        <p class="note">Dress Code: Cocktail Attire</p>
-      </div>
-      <div class="event card">
-        <h3>Post-Wedding Brunch</h3>
-        <p class="time">Sunday, Oct 25, 2026 • 11:00 AM</p>
-        <p class="location">Location TBD • San Francisco, CA</p>
-        <p class="note">Casual drop-in brunch</p>
+    </div>
+
+    <!-- Vietnam Schedule Content -->
+    <div class="schedule-content" id="schedule-vietnam">
+      <div class="timeline">
+        <div class="event card">
+          <h3>Sunset Riverboat Welcome Cruise</h3>
+          <p class="time">Friday, November 12, 2027 • 5:00 PM</p>
+          <p class="location">Bach Dang Pier to An Lâm Retreats</p>
+          <p class="note">Resort chic / light tropical attire</p>
+        </div>
+        <div class="event card featured-event">
+          <span class="event-badge">Wedding Day</span>
+          <h3>Riverside Ceremony & Celebration Dinner</h3>
+          <p class="time">Saturday, November 13, 2027 • 4:30 PM</p>
+          <p class="location">Riverfront Lawn & Restaurant • An Lâm Retreats</p>
+          <p class="note">Dress Code: Elegant Garden / Tropical Formal</p>
+        </div>
+        <div class="event card">
+          <h3>Post-Wedding Riverside Brunch</h3>
+          <p class="time">Sunday, November 14, 2027 • 10:30 AM</p>
+          <p class="location">Sen Restaurant Lawn</p>
+          <p class="note">Casual tropical attire</p>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- Gallery Section -->
-  <section id="gallery" class="section alt-bg">
+  <section id="gallery" class="section">
     <h2>Gallery</h2>
+    <p class="section-intro">Memories from our adventures together as we count down to forever.</p>
     <div class="gallery-grid">
       <img src="assets/photo1.jpg" alt="Engagement in Paris" class="gallery-img">
       <img src="assets/photo2.jpg" alt="Golden Gate Sunset" class="gallery-img">
@@ -88,48 +195,71 @@
   </section>
 
   <!-- Travel & Accommodations -->
-  <section id="travel" class="section">
-    <h2>Travel & Stay</h2>
+  <section id="travel" class="section alt-bg">
+    <h2>Travel & Logistics</h2>
     <div class="grid">
+      <!-- Kentucky Travel -->
       <div class="card">
-        <h3>Hotel Block</h3>
-        <p><strong>Hotel Information</strong></p>
-        <p>San Francisco, CA</p>
-        <a href="#" class="link">Book Room Block →</a>
+        <span class="destination-tag">Kentucky Logistics</span>
+        <h3>Getting to Cliffview Resort</h3>
+        <p><strong>Nearest Airports:</strong></p>
+        <ul>
+          <li><strong>LEX</strong> (Lexington Blue Grass Airport) — ~1 hour drive</li>
+          <li><strong>CVG</strong> (Cincinnati / Northern KY) — ~2 hours drive</li>
+          <li><strong>SDF</strong> (Louisville Muhammad Ali) — ~2 hours drive</li>
+        </ul>
+        <p><strong>Accommodations:</strong> On-site rooms at The Lodge and private luxury cabins throughout the resort.</p>
+        <a href="https://maps.app.goo.gl/gu4aFDwr68ofQiy38" target="_blank" rel="noopener" class="link">Directions on Google Maps →</a>
       </div>
+
+      <!-- Vietnam Travel -->
       <div class="card">
-        <h3>Getting Here</h3>
-        <p><strong>Nearest Airports:</strong> SFO (San Francisco) or OAK (Oakland)</p>
-        <p>Rideshare, public transit (BART/Muni), and shuttles will be available.</p>
+        <span class="destination-tag">Vietnam Logistics</span>
+        <h3>Getting to An Lâm Retreats</h3>
+        <p><strong>Nearest Airport:</strong></p>
+        <ul>
+          <li><strong>SGN</strong> (Tan Son Nhat International Airport, Ho Chi Minh City)</li>
+        </ul>
+        <p><strong>Resort Transfer:</strong> An Lâm provides private 25-minute scenic speedboat transfers directly from central Saigon (Bach Dang Pier) or private vehicle transfers.</p>
+        <p><strong>Passport & Visa:</strong> Please verify your passport has at least 6 months validity and check Vietnam e-Visa requirements prior to departure.</p>
+        <a href="https://anlam.com/saigon-river/our-retreat/" target="_blank" rel="noopener" class="link">Learn about An Lâm Transfers →</a>
       </div>
     </div>
   </section>
 
   <!-- RSVP Section (Embed Form) -->
-  <section id="rsvp" class="section alt-bg">
+  <section id="rsvp" class="section">
     <h2>RSVP</h2>
-    <p class="rsvp-subtext">Please kindly respond by September 20, 2026.</p>
+    <p class="rsvp-subtext">Whether joining us in Kentucky, Vietnam, or both, please kindly respond by the dates below.</p>
+    <div class="rsvp-deadlines">
+      <div class="deadline-badge">
+        <strong>Cliffview Resort (KY):</strong> RSVP by August 15, 2027
+      </div>
+      <div class="deadline-badge">
+        <strong>An Lâm Retreats (VN):</strong> RSVP by August 15, 2027
+      </div>
+    </div>
     <div class="form-container">
       <div class="rsvp-placeholder">
-        <p>RSVP Form will be embedded here via Tally.so or Google Forms.</p>
+        <p>RSVP Form will allow you to indicate attendance for both celebrations.</p>
         <a href="#" class="btn outline" target="_blank" rel="noopener">Open RSVP Form</a>
       </div>
     </div>
   </section>
 
   <!-- Registry Section -->
-  <section id="registry" class="section">
+  <section id="registry" class="section alt-bg">
     <h2>Registry</h2>
-    <p class="registry-subtext">Your presence is gift enough, but if you wish to contribute, we’ve created a few funds below:</p>
+    <p class="registry-subtext">Having you celebrate with us across the globe is the greatest gift of all. If you would like to contribute to our future travels and home, we have set up the funds below:</p>
     <div class="button-group">
       <a href="#" class="btn outline" target="_blank" rel="noopener">Honeymoon Fund</a>
-      <a href="#" class="btn outline" target="_blank" rel="noopener">Zola / Target Registry</a>
+      <a href="#" class="btn outline" target="_blank" rel="noopener">Wedding Registry</a>
     </div>
   </section>
 
   <footer>
     <p>We can't wait to celebrate with you!</p>
-    <p class="furever-tag">Khanh & Adam Furever</p>
+    <p class="furever-tag">Khanh & Adam Furever • Kentucky & Vietnam 2027</p>
   </footer>
 
   <!-- Modal Lightbox -->
