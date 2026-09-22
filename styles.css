@@ -323,83 +323,38 @@ h3 {
   flex-wrap: wrap;
 }
 
-/* Schedule Tabs & Content */
-.schedule-tabs {
-  display: flex;
-  justify-content: center;
-  gap: 0.75rem;
-  margin-bottom: 2.5rem;
-}
-
-.schedule-tab {
-  background: white;
-  border: 1px solid var(--border-subtle);
-  padding: 0.75rem 1.6rem;
-  border-radius: 30px;
-  font-family: var(--font-sans);
-  font-size: 0.9rem;
-  font-weight: 500;
-  color: var(--text-muted);
-  cursor: pointer;
-  transition: all 0.2s ease;
-}
-
-.schedule-tab.active {
-  background: var(--accent-color);
-  color: white;
-  border-color: var(--accent-color);
-  box-shadow: 0 4px 12px rgba(90, 107, 92, 0.25);
-}
-
-.schedule-content {
-  display: none;
-}
-
-.schedule-content.active {
-  display: block;
-}
-
-.timeline {
+/* Ceremony Schedule Cards */
+.ceremony-card {
+  text-align: center;
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  align-items: center;
+  justify-content: center;
+  padding: 2.5rem 2rem;
 }
 
-.featured-event {
-  border: 1.5px solid var(--accent-color);
-  background: #fdfdfc;
-  position: relative;
+.ceremony-card h3 {
+  font-size: 1.8rem;
+  margin-top: 0.25rem;
+  margin-bottom: 0.5rem;
+  color: #232d24;
 }
 
-.event-badge {
-  position: absolute;
-  top: -12px;
-  right: 20px;
-  background: var(--accent-color);
-  color: white;
-  font-size: 0.75rem;
+.ceremony-time {
+  font-family: var(--font-sans);
+  font-size: 1.15rem;
   font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  padding: 0.2rem 0.75rem;
-  border-radius: 12px;
-}
-
-.event .time {
-  font-weight: 600;
-  color: #333;
-  margin: 0.25rem 0;
-}
-
-.event .location {
-  color: var(--text-muted);
-  margin: 0.2rem 0;
-}
-
-.event .note {
-  font-size: 0.9rem;
   color: var(--accent-color);
-  font-style: italic;
+  margin: 0.5rem 0;
+}
+
+.ceremony-card .location {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  margin-bottom: 1.25rem;
+}
+
+.ceremony-action {
   margin-top: 0.5rem;
 }
 

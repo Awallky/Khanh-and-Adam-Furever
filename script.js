@@ -81,26 +81,6 @@ document.addEventListener('DOMContentLoaded', () => {
   updateCountdown();
   setInterval(updateCountdown, 1000);
 
-  /* =========================================================
-     2. SCHEDULE TABS SWITCHER
-     ========================================================= */
-  const scheduleTabs = document.querySelectorAll('.schedule-tab');
-  const scheduleContents = document.querySelectorAll('.schedule-content');
-
-  scheduleTabs.forEach(tab => {
-    tab.addEventListener('click', () => {
-      const targetSchedule = tab.getAttribute('data-schedule');
-
-      scheduleTabs.forEach(t => t.classList.remove('active'));
-      scheduleContents.forEach(c => c.classList.remove('active'));
-
-      tab.classList.add('active');
-      const targetContent = document.getElementById(`schedule-${targetSchedule}`);
-      if (targetContent) {
-        targetContent.classList.add('active');
-      }
-    });
-  });
 
   /* =========================================================
      3. IMAGE MODAL (LIGHTBOX)
