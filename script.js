@@ -3,8 +3,8 @@ document.addEventListener('DOMContentLoaded', () => {
   /* =========================================================
      1. COUNTDOWN TIMER
      ========================================================= */
-  // Set target date (ISO format string)
-  const targetDate = new Date('2026-10-24T16:30:00').getTime();
+  // Set target date in San Francisco / Pacific Daylight Time (PDT is UTC-7)
+  const targetDate = new Date('2026-10-24T16:30:00-07:00').getTime();
 
   const daysEl = document.getElementById('days');
   const hoursEl = document.getElementById('hours');
