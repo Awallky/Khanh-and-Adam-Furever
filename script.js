@@ -12,8 +12,8 @@ document.addEventListener('DOMContentLoaded', () => {
     },
     vietnam: {
       label: 'Counting down to An Lâm Retreats (Saigon River):',
-      // Saturday, November 13, 2027 at 4:30 PM ICT (UTC+7)
-      targetDate: new Date('2027-11-13T16:30:00+07:00').getTime(),
+      // Saturday, November 13, 2027 at 3:00 PM ICT (UTC+7)
+      targetDate: new Date('2027-11-13T15:00:00+07:00').getTime(),
       finishedText: 'Today is the Vietnam Celebration Day!'
     }
   };
