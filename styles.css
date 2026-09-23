@@ -548,9 +548,16 @@ h3 {
   width: 100%;
 }
 
-.rsvp-direct-link {
+.rsvp-footer-notes {
   text-align: center;
-  margin-top: 1rem;
+  margin-top: 1.25rem;
+}
+
+.rsvp-note {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  margin-bottom: 0.5rem;
+  font-style: italic;
 }
 
 /* Buttons */

@@ -84,6 +84,7 @@ document.addEventListener('DOMContentLoaded', () => {
       rsvp_subtext: 'Whether joining us in Kentucky, Vietnam, or both, please kindly respond by the dates below.',
       rsvp_ky_deadline: '<strong>Cliffview Resort (KY):</strong> RSVP by August 15, 2027',
       rsvp_vn_deadline: '<strong>An Lâm Retreats (VN):</strong> RSVP by August 15, 2027',
+      rsvp_update_note: 'Need to change your plans? You can re-submit this form or use the edit link in your confirmation email.',
       rsvp_direct_link: 'Having trouble with the form? Open RSVP in a new tab →',
 
       registry_title: 'Registry',
@@ -175,6 +176,7 @@ document.addEventListener('DOMContentLoaded', () => {
       rsvp_subtext: 'Dù chung vui cùng chúng mình tại Kentucky, Việt Nam hay cả hai, xin vui lòng gửi phản hồi trước ngày dưới đây.',
       rsvp_ky_deadline: '<strong>Cliffview Resort (KY):</strong> Hạn phản hồi: 15/08/2027',
       rsvp_vn_deadline: '<strong>An Lâm Retreats (VN):</strong> Hạn phản hồi: 15/08/2027',
+      rsvp_update_note: 'Cần thay đổi thông tin sau khi gửi? Bạn có thể gửi lại biểu mẫu này hoặc dùng đường dẫn chỉnh sửa trong email xác nhận.',
       rsvp_direct_link: 'Gặp khó khăn khi điền biểu mẫu? Mở RSVP trong tab mới →',
 
       registry_title: 'Mừng Cưới',
