@@ -84,8 +84,7 @@ document.addEventListener('DOMContentLoaded', () => {
       rsvp_subtext: 'Whether joining us in Kentucky, Vietnam, or both, please kindly respond by the dates below.',
       rsvp_ky_deadline: '<strong>Cliffview Resort (KY):</strong> RSVP by August 15, 2027',
       rsvp_vn_deadline: '<strong>An Lâm Retreats (VN):</strong> RSVP by August 15, 2027',
-      rsvp_placeholder_text: 'RSVP Form will allow you to indicate attendance for both celebrations.',
-      rsvp_btn: 'Open RSVP Form',
+      rsvp_direct_link: 'Having trouble with the form? Open RSVP in a new tab →',
 
       registry_title: 'Registry',
       registry_subtext: 'Having you celebrate with us across the globe is the greatest gift of all. If you would like to contribute to our future travels and home, we have set up the funds below:',
@@ -176,8 +175,7 @@ document.addEventListener('DOMContentLoaded', () => {
       rsvp_subtext: 'Dù chung vui cùng chúng mình tại Kentucky, Việt Nam hay cả hai, xin vui lòng gửi phản hồi trước ngày dưới đây.',
       rsvp_ky_deadline: '<strong>Cliffview Resort (KY):</strong> Hạn phản hồi: 15/08/2027',
       rsvp_vn_deadline: '<strong>An Lâm Retreats (VN):</strong> Hạn phản hồi: 15/08/2027',
-      rsvp_placeholder_text: 'Biểu mẫu RSVP sẽ giúp bạn lựa chọn tham dự một hoặc cả hai buổi lễ.',
-      rsvp_btn: 'Mở Biểu Mẫu RSVP',
+      rsvp_direct_link: 'Gặp khó khăn khi điền biểu mẫu? Mở RSVP trong tab mới →',
 
       registry_title: 'Mừng Cưới',
       registry_subtext: 'Sự hiện diện và lời chúc phúc của bạn là món quà quý giá nhất dành cho chúng mình. Nếu bạn muốn gửi lời chúc mừng đến tổ ấm tương lai, bạn có thể tham khảo các quỹ dưới đây:',

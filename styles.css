@@ -545,6 +545,12 @@ h3 {
   border-radius: 12px;
   border: 1px solid var(--border-subtle);
   background: white;
+  width: 100%;
+}
+
+.rsvp-direct-link {
+  text-align: center;
+  margin-top: 1rem;
 }
 
 /* Buttons */
