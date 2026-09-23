@@ -201,18 +201,23 @@ document.addEventListener('DOMContentLoaded', () => {
       btn.classList.toggle('active', btn.getAttribute('data-lang') === lang);
     });
 
-    // Update text elements with data-i18n
+    // Update text elements with data-i18n (safely render innerHTML if formatted tags exist)
     document.querySelectorAll('[data-i18n]').forEach(el => {
       const key = el.getAttribute('data-i18n');
-      if (translations[lang][key]) {
-        el.textContent = translations[lang][key];
+      if (translations[lang] && translations[lang][key]) {
+        const val = translations[lang][key];
+        if (val.includes('<') && val.includes('>')) {
+          el.innerHTML = val;
+        } else {
+          el.textContent = val;
+        }
       }
     });
 
     // Update HTML elements with data-i18n-html
     document.querySelectorAll('[data-i18n-html]').forEach(el => {
       const key = el.getAttribute('data-i18n-html');
-      if (translations[lang][key]) {
+      if (translations[lang] && translations[lang][key]) {
         el.innerHTML = translations[lang][key];
       }
     });
