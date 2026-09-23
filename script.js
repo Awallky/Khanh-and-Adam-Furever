@@ -22,8 +22,8 @@ document.addEventListener('DOMContentLoaded', () => {
       
       cd_tab_ky: 'Cliffview Resort (Oct 23)',
       cd_tab_vn: 'An Lâm Saigon River (Nov 13)',
-      cd_label_ky: 'Counting down to Cliffview Resort (Kentucky):',
-      cd_label_vn: 'Counting down to An Lâm Retreats (Saigon River):',
+      cd_label_ky: 'Counting down to Cliffview Resort (Oct 23, 2027 • 4:30 PM EDT in Kentucky):',
+      cd_label_vn: 'Counting down to An Lâm Retreats (Nov 13, 2027 • 3:00 PM ICT in Saigon):',
       cd_finished_ky: 'Today is the Kentucky Celebration Day!',
       cd_finished_vn: 'Today is the Vietnam Celebration Day!',
       cd_days: 'Days',
@@ -115,8 +115,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
       cd_tab_ky: 'Cliffview Resort (23/10)',
       cd_tab_vn: 'An Lâm Saigon River (13/11)',
-      cd_label_ky: 'Đếm ngược đến lễ cưới tại Cliffview Resort (Kentucky):',
-      cd_label_vn: 'Đếm ngược đến lễ cưới tại An Lâm Retreats (Sông Sài Gòn):',
+      cd_label_ky: 'Đếm ngược đến lễ cưới tại Cliffview Resort (23/10/2027 • 16:30 giờ Kentucky, EDT):',
+      cd_label_vn: 'Đếm ngược đến lễ cưới tại An Lâm Retreats (13/11/2027 • 15:00 giờ Sài Gòn, ICT):',
       cd_finished_ky: 'Hôm nay là ngày vui tại Kentucky!',
       cd_finished_vn: 'Hôm nay là ngày vui tại Việt Nam!',
       cd_days: 'Ngày',
