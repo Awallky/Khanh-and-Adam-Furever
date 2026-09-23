@@ -77,9 +77,8 @@ document.addEventListener('DOMContentLoaded', () => {
       travel_vn_title: 'Getting to An Lâm Retreats',
       travel_vn_airports_title: 'Nearest Airport:',
       travel_vn_airport_sgn: '<strong>SGN</strong> (Tan Son Nhat International Airport, Ho Chi Minh City)',
-      travel_vn_transfer: '<strong>Resort Transfer:</strong> An Lâm provides private 25-minute scenic speedboat transfers directly from central Saigon (Bach Dang Pier) or private vehicle transfers.',
+      travel_vn_transfer: '<strong>Transportation:</strong> Details TBD.',
       travel_vn_visa: '<strong>Passport & Visa:</strong> Please verify your passport has at least 6 months validity and check Vietnam e-Visa requirements prior to departure.',
-      travel_vn_link: 'Learn about An Lâm Transfers →',
 
       rsvp_title: 'RSVP',
       rsvp_subtext: 'Whether joining us in Kentucky, Vietnam, or both, please kindly respond by the dates below.',
@@ -170,9 +169,8 @@ document.addEventListener('DOMContentLoaded', () => {
       travel_vn_title: 'Đến An Lâm Retreats',
       travel_vn_airports_title: 'Sân bay gần nhất:',
       travel_vn_airport_sgn: '<strong>SGN</strong> (Sân bay Quốc tế Tân Sơn Nhất, TP. Hồ Chí Minh)',
-      travel_vn_transfer: '<strong>Đưa đón:</strong> An Lâm cung cấp dịch vụ cano cao tốc 25 phút ngắm cảnh sông từ bến Bạch Đằng (trung tâm Sài Gòn) hoặc xe riêng.',
+      travel_vn_transfer: '<strong>Phương tiện di chuyển:</strong> Thông tin sẽ được cập nhật sau (TBD).',
       travel_vn_visa: '<strong>Hộ chiếu & Thị thực:</strong> Vui lòng đảm bảo hộ chiếu còn hạn ít nhất 6 tháng và kiểm tra yêu cầu e-Visa Việt Nam trước chuyến bay.',
-      travel_vn_link: 'Tìm hiểu dịch vụ đưa đón của An Lâm →',
 
       rsvp_title: 'Xác Nhận Tham Dự',
       rsvp_subtext: 'Dù chung vui cùng chúng mình tại Kentucky, Việt Nam hay cả hai, xin vui lòng gửi phản hồi trước ngày dưới đây.',
