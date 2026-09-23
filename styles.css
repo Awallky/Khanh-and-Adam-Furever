@@ -75,11 +75,20 @@ h3 {
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
   display: flex;
-  justify-content: center;
-  gap: 1.8rem;
-  padding: 1.1rem;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.9rem 2rem;
   border-bottom: 1px solid var(--border-subtle);
   z-index: 100;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 1.8rem;
+  flex-wrap: wrap;
 }
 
 .navbar a {
@@ -94,6 +103,47 @@ h3 {
 
 .navbar a:hover {
   color: var(--accent-color);
+}
+
+/* Language Switcher */
+.lang-switch {
+  display: flex;
+  align-items: center;
+  background: white;
+  border: 1px solid var(--border-subtle);
+  border-radius: 20px;
+  padding: 0.25rem 0.6rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
+  margin-left: 1rem;
+}
+
+.lang-btn {
+  background: transparent;
+  border: none;
+  font-family: var(--font-sans);
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  color: var(--text-muted);
+  cursor: pointer;
+  padding: 0.2rem 0.45rem;
+  border-radius: 12px;
+  transition: all 0.2s ease;
+}
+
+.lang-btn:hover {
+  color: var(--text-color);
+}
+
+.lang-btn.active {
+  background: var(--accent-color);
+  color: white;
+}
+
+.lang-divider {
+  color: var(--border-subtle);
+  font-size: 0.75rem;
+  margin: 0 0.1rem;
 }
 
 /* Hero Section */
@@ -393,6 +443,12 @@ h3 {
   opacity: 0.95;
 }
 
+.gallery-action {
+  display: flex;
+  justify-content: center;
+  margin-top: 2.5rem;
+}
+
 /* --- Image Modal (Lightbox) --- */
 .modal {
   display: none;
@@ -582,11 +638,22 @@ footer p {
 @media (max-width: 768px) {
   h1 { font-size: 2.8rem; }
   h2 { font-size: 2rem; }
-  .navbar { gap: 1rem; font-size: 0.75rem; padding: 0.8rem; flex-wrap: wrap; }
+  .navbar {
+    padding: 0.8rem 1rem;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  .nav-links {
+    justify-content: center;
+    gap: 0.9rem;
+    font-size: 0.75rem;
+  }
+  .lang-switch {
+    margin-left: 0;
+  }
   .section { padding: 3.5rem 1.5rem; }
   .alt-bg { padding-left: 1.5rem; padding-right: 1.5rem; }
   .card { padding: 1.5rem; }
   .celebration-badges { flex-direction: column; gap: 0.75rem; }
   .badge-divider { display: none; }
-  .schedule-tabs { flex-direction: column; }
 }
