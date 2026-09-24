@@ -88,9 +88,7 @@ document.addEventListener('DOMContentLoaded', () => {
       rsvp_direct_link: 'Having trouble with the form? Open RSVP in a new tab →',
 
       registry_title: 'Registry',
-      registry_subtext: 'Having you celebrate with us across the globe is the greatest gift of all. If you would like to contribute to our future travels and home, we have set up the funds below:',
-      registry_btn_honeymoon: 'Honeymoon Fund',
-      registry_btn_wedding: 'Wedding Registry',
+      registry_subtext: 'Having you celebrate with us across the globe is the greatest gift of all. Registry details will be shared closer to the dates (TBD).',
 
       footer_text: "We can't wait to celebrate with you!",
       footer_tag: 'Khanh & Adam Furever • Kentucky & Vietnam 2027'
@@ -180,9 +178,7 @@ document.addEventListener('DOMContentLoaded', () => {
       rsvp_direct_link: 'Gặp khó khăn khi điền biểu mẫu? Mở RSVP trong tab mới →',
 
       registry_title: 'Quà Cưới',
-      registry_subtext: 'Sự hiện diện và lời chúc phúc của bạn là món quà quý giá nhất dành cho chúng mình. Nếu bạn muốn gửi quà mừng đến tổ ấm tương lai, bạn có thể tham khảo các danh mục dưới đây:',
-      registry_btn_honeymoon: 'Quỹ Trăng Mật',
-      registry_btn_wedding: 'Danh Sách Quà Cưới',
+      registry_subtext: 'Sự hiện diện và lời chúc phúc của bạn là món quà quý giá nhất dành cho chúng mình. Thông tin về quà cưới sẽ được cập nhật sau (TBD).',
 
       footer_text: 'Chúng mình rất mong được chung vui cùng bạn!',
       footer_tag: 'Khanh & Adam Furever • Kentucky & Việt Nam 2027'
