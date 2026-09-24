@@ -103,7 +103,7 @@ document.addEventListener('DOMContentLoaded', () => {
       nav_gallery: 'Hình Ảnh',
       nav_travel: 'Di Chuyển',
       nav_rsvp: 'Xác Nhận',
-      nav_registry: 'Mừng Cưới',
+      nav_registry: 'Quà Cưới',
 
       hero_tagline: 'Khanh & Adam Furever',
       hero_subtitle: 'Hai buổi lễ, hai phương trời, một câu chuyện tình yêu.',
@@ -179,10 +179,10 @@ document.addEventListener('DOMContentLoaded', () => {
       rsvp_update_note: 'Cần thay đổi thông tin sau khi gửi? Bạn có thể gửi lại biểu mẫu này hoặc dùng đường dẫn chỉnh sửa trong email xác nhận.',
       rsvp_direct_link: 'Gặp khó khăn khi điền biểu mẫu? Mở RSVP trong tab mới →',
 
-      registry_title: 'Mừng Cưới',
-      registry_subtext: 'Sự hiện diện và lời chúc phúc của bạn là món quà quý giá nhất dành cho chúng mình. Nếu bạn muốn gửi lời chúc mừng đến tổ ấm tương lai, bạn có thể tham khảo các quỹ dưới đây:',
+      registry_title: 'Quà Cưới',
+      registry_subtext: 'Sự hiện diện và lời chúc phúc của bạn là món quà quý giá nhất dành cho chúng mình. Nếu bạn muốn gửi quà mừng đến tổ ấm tương lai, bạn có thể tham khảo các danh mục dưới đây:',
       registry_btn_honeymoon: 'Quỹ Trăng Mật',
-      registry_btn_wedding: 'Quỹ Mừng Cưới',
+      registry_btn_wedding: 'Danh Sách Quà Cưới',
 
       footer_text: 'Chúng mình rất mong được chung vui cùng bạn!',
       footer_tag: 'Khanh & Adam Furever • Kentucky & Việt Nam 2027'
