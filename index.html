@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Khanh & Adam — Two Celebrations</title>
+  <title>Khanh & Adam — Two Chapters, One Love</title>
   <link rel="stylesheet" href="styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400;1,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -15,7 +15,7 @@
   <nav class="navbar">
     <div class="nav-links">
       <a href="#hero" data-i18n="nav_home">Home</a>
-      <a href="#destinations" data-i18n="nav_destinations">Destinations</a>
+      <a href="#chapters" data-i18n="nav_chapters">Two Chapters</a>
       <a href="#schedule" data-i18n="nav_schedule">Schedule</a>
       <a href="#gallery" data-i18n="nav_gallery">Gallery</a>
       <a href="#travel" data-i18n="nav_travel">Travel</a>
@@ -31,39 +31,45 @@
     </div>
   </nav>
 
-  <!-- Hero Section -->
-  <header id="hero" class="hero">
+  <!-- Hero Section with Photo Background -->
+  <header id="hero" class="hero hero-story">
+    <div class="hero-overlay"></div>
     <div class="hero-content">
+      <div class="hero-monogram">K ✦ A</div>
       <p class="tagline" data-i18n="hero_tagline">Khanh & Adam Furever</p>
       <h1>Khanh & Adam</h1>
-      <p class="hero-subtitle" data-i18n="hero_subtitle">Two celebrations, two corners of the world, one love story.</p>
+      <p class="hero-subtitle" data-i18n="hero_subtitle">Two chapters, two corners of the world, one love story.</p>
       
-      <!-- Dual Celebration Badges -->
+      <!-- Dual Celebration Badges (Chapter Style) -->
       <div class="celebration-badges">
-        <div class="badge-item">
+        <div class="badge-item chapter-badge">
           <span class="badge-icon">🍂</span>
-          <span class="badge-title" data-i18n="badge_ky_title">Kentucky Celebration</span>
-          <span class="badge-date" data-i18n="badge_ky_date">October 23, 2027 • Cliffview Resort</span>
+          <div class="badge-text-group">
+            <span class="badge-chapter" data-i18n="badge_ky_chapter">Chapter I: The Autumn Gorge</span>
+            <span class="badge-date" data-i18n="badge_ky_date">Oct 23, 2027 • Cliffview Resort, KY</span>
+          </div>
         </div>
-        <div class="badge-item">
+        <div class="badge-item chapter-badge">
           <span class="badge-icon">🌿</span>
-          <span class="badge-title" data-i18n="badge_vn_title">Vietnam Celebration</span>
-          <span class="badge-date" data-i18n="badge_vn_date">November 13, 2027 • An Lâm Retreats</span>
+          <div class="badge-text-group">
+            <span class="badge-chapter" data-i18n="badge_vn_chapter">Chapter II: The Tropical River</span>
+            <span class="badge-date" data-i18n="badge_vn_date">Nov 13, 2027 • An Lâm Retreats, VN</span>
+          </div>
         </div>
       </div>
 
-      <!-- Countdown Section with Location Tabs -->
+      <!-- Countdown Section with Chapter Tabs -->
       <div class="countdown-wrapper">
         <div class="countdown-tabs" role="tablist">
           <button class="countdown-tab active" id="tab-kentucky" data-target="kentucky" role="tab" aria-selected="true" data-i18n="cd_tab_ky">
-            Cliffview Resort (Oct 23)
+            Chapter I: Kentucky (Oct 23)
           </button>
           <button class="countdown-tab" id="tab-vietnam" data-target="vietnam" role="tab" aria-selected="false" data-i18n="cd_tab_vn">
-            An Lâm Saigon River (Nov 13)
+            Chapter II: Vietnam (Nov 13)
           </button>
         </div>
 
-        <div class="countdown-title" id="countdown-label">Counting down to Cliffview Resort:</div>
+        <div class="countdown-title" id="countdown-label">Counting down to Chapter I (Cliffview Resort):</div>
 
         <div class="countdown-container">
           <div class="countdown-item">
@@ -85,20 +91,21 @@
         </div>
       </div>
 
-      <a href="#rsvp" class="btn" data-i18n="hero_rsvp_btn">RSVP for Celebrations</a>
+      <a href="#rsvp" class="btn btn-hero" data-i18n="hero_rsvp_btn">RSVP for Celebrations</a>
     </div>
   </header>
 
-  <!-- Destinations Section -->
-  <section id="destinations" class="section">
-    <h2 data-i18n="dest_title">Our Two Venues</h2>
-    <p class="section-intro" data-i18n="dest_intro">We are thrilled to celebrate our marriage with two distinct ceremonies surrounded by stunning nature and our beloved family and friends.</p>
+  <!-- Two Chapters Section -->
+  <section id="chapters" class="section">
+    <h2 data-i18n="chapters_title">Our Two Chapters</h2>
+    <p class="section-intro" data-i18n="chapters_intro">We are thrilled to celebrate our marriage in two extraordinary settings surrounded by nature and those we love most.</p>
     
     <div class="grid destination-grid">
-      <!-- Destination 1: Cliffview Resort -->
-      <div class="card destination-card">
+      <!-- Chapter I: Cliffview Resort -->
+      <div class="card destination-card chapter-card">
         <div class="destination-header">
-          <span class="destination-tag" data-i18n="dest_ky_tag">USA Celebration</span>
+          <div class="chapter-number">I</div>
+          <span class="destination-tag" data-i18n="dest_ky_tag">Chapter I • Kentucky</span>
           <h3>Cliffview Resort</h3>
           <p class="destination-date" data-i18n="dest_ky_date">Saturday, October 23, 2027 • 4:30 PM – 8:30 PM</p>
           <p class="destination-place" data-i18n="dest_ky_place">Red River Gorge • Campton, Kentucky</p>
@@ -112,10 +119,11 @@
         </div>
       </div>
 
-      <!-- Destination 2: An Lam Retreats Saigon River -->
-      <div class="card destination-card">
+      <!-- Chapter II: An Lam Retreats Saigon River -->
+      <div class="card destination-card chapter-card">
         <div class="destination-header">
-          <span class="destination-tag" data-i18n="dest_vn_tag">Vietnam Celebration</span>
+          <div class="chapter-number">II</div>
+          <span class="destination-tag" data-i18n="dest_vn_tag">Chapter II • Vietnam</span>
           <h3>An Lâm Retreats Saigon River</h3>
           <p class="destination-date" data-i18n="dest_vn_date">Saturday, November 13, 2027 • 3:00 PM – 10:00 PM</p>
           <p class="destination-place" data-i18n="dest_vn_place">Saigon River • Ho Chi Minh City, Vietnam</p>
@@ -139,7 +147,7 @@
     <div class="grid ceremony-grid">
       <!-- Kentucky Ceremony -->
       <div class="card ceremony-card">
-        <span class="destination-tag" data-i18n="sched_ky_tag">Kentucky</span>
+        <span class="destination-tag" data-i18n="sched_ky_tag">Chapter I • Kentucky</span>
         <h3 data-i18n="sched_ky_title">Wedding Celebration</h3>
         <p class="ceremony-time" data-i18n-html="sched_ky_time">Saturday, October 23, 2027<br>4:30 PM – 8:30 PM</p>
         <p class="location" data-i18n="sched_ky_loc">Cliffview Resort • Campton, KY</p>
@@ -150,7 +158,7 @@
 
       <!-- Vietnam Ceremony -->
       <div class="card ceremony-card">
-        <span class="destination-tag" data-i18n="sched_vn_tag">Vietnam</span>
+        <span class="destination-tag" data-i18n="sched_vn_tag">Chapter II • Vietnam</span>
         <h3 data-i18n="sched_vn_title">Wedding Celebration</h3>
         <p class="ceremony-time" data-i18n-html="sched_vn_time">Saturday, November 13, 2027<br>3:00 PM – 10:00 PM</p>
         <p class="location" data-i18n="sched_vn_loc">An Lâm Retreats Saigon River • Ho Chi Minh City, Vietnam</p>
@@ -237,7 +245,7 @@
 
   <!-- Registry Section -->
   <section id="registry" class="section alt-bg">
-    <h2 data-i18n="registry_title">Registry</h2>
+    <h2 data-i18n="registry_title">Quà Cưới</h2>
     <p class="registry-subtext" data-i18n="registry_subtext">Having you celebrate with us across the globe is the greatest gift of all. Registry details will be shared closer to the dates (TBD).</p>
   </section>
 
