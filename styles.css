@@ -72,17 +72,22 @@ h3 {
 .navbar {
   position: sticky;
   top: 0;
+  width: 100%;
   background-color: rgba(250, 249, 246, 0.96);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--border-subtle);
+  z-index: 100;
+}
+
+.nav-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.95rem 2rem;
-  border-bottom: 1px solid var(--border-subtle);
-  z-index: 100;
+  padding: 0.85rem 2rem;
   max-width: 1200px;
   margin: 0 auto;
+  width: 100%;
 }
 
 .nav-brand {
@@ -704,7 +709,7 @@ footer p {
 @media (max-width: 768px) {
   h1 { font-size: 3rem; }
   h2 { font-size: 2.1rem; }
-  .navbar {
+  .nav-container {
     padding: 0.8rem 1.25rem;
     flex-wrap: wrap;
     justify-content: space-between;
